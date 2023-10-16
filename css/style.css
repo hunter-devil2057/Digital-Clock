@@ -1,0 +1,75 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body
+{
+    display: flex;     /* For bringing everything to the center horizontally, we use property of 'display' as flex */
+    flex-direction: column;     /* Brings them back as a column */
+    align-items: center;      /* Brings all the items in Center vertically*/
+    height: 100vh;     /* Setting height of the body to the height of the screen vertically */
+    justify-content: center;     /* Brings everything to the center of the screen*/
+    background: url("https://images.unsplash.com/photo-1499002238440-d264edd596ec?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80") no-repeat;       /* Here, the 'no-repeat doesn't let image to repeat more than once.' */    
+    font-family: sans-serif;
+    background-size: cover;     /* provides the effects of the opacity on our website */
+    overflow: hidden;    /* On decreasing the size, we don't see any overflow */
+}
+
+h2
+{
+    text-transform: uppercase;     /* Transforms the written text into block letters/uppercase */
+    letter-spacing:2px;     /* Increases the space between the letters by 4px */
+    font-size: 30px;
+    text-align: center;
+    color: antiquewhite;
+    font-weight: bolder;
+}
+
+.clock
+{
+    display: flex;
+}
+
+.clock div    /*div tag inside clock class*/
+{
+    margin:5px;
+    position: relative;
+}
+
+.clock span
+{
+    width:115px;
+    height:80px;
+    background-color: slateblue;
+    opacity: .8;
+    color: white;     /* Defines the color of the text to be white*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    text-shadow: 2px 2px 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+.clock .text
+{
+    height: 30px;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-color: darkblue;
+    opacity: 0.8;
+}
+
+.clock div #ampm
+{
+    bottom: 0;
+    position: absolute;
+    width:60px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: green;
+}

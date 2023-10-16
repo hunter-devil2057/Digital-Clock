@@ -1,0 +1,56 @@
+<!DOCTYPE html>  <!--tells the browser which version of HTML the page is written in-->
+<html lang="en">
+<!--
+    - HTML is the top-level element (tag) inside the HTML file.
+    - includes two tag: head tag and body tag
+    - the 'lang' attribute inside the opening HTML tag sets the language of the page... 
+ -->
+<head>
+    <!-- 
+        - includes 3 - meta data tags + 1 - title tag
+        - 
+
+    -->
+    <meta charset="UTF-8">
+    <!--
+        - Here, the 'charset' attribute defines the HTML character encoding
+        - UTF-8 is recommended by HTML 5 for Web Developers because it nearly contains all the characters and symbols
+    -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 
+        - This metadata tag tells the Internet Explorer Brower to use the most recent rendering Engine, which is 'edge'.
+     -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--
+        View Port Meta Tag
+        - tells teh browser on how to resize the page.
+        - 'content' attribute parts the first part sets the pages with two devices screens width
+            For Example: 
+                 If the user is using mobile screen, the pages will be small than another person using a computer screen.
+        -  'initial-scale=1.0': Initial Zoom level of the browser, which is set to be 100% as a default...
+    -->
+    <title>Digital Clock</title>      <!-- Sets the Title of the Page -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h2>My Digital Clock</h2>
+    <div class="clock">
+        <div>
+            <span id="hour">00</span>
+            <span class="text">Hours</span>
+        </div>
+        <div>
+            <span id="minutes">00</span>
+            <span class="text">Minutes</span>
+        </div>
+        <div>
+            <span id="seconds">00</span>
+            <span class="text">Seconds</span>
+        </div>
+        <div>
+            <span id="ampm">AM</span>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
